@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Omar El Akrae — CV</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: 'Segoe UI', Arial, sans-serif;
+      font-size: 13px;
+      color: #111;
+      background: #fff;
+      max-width: 820px;
+      margin: 40px auto;
+      padding: 0 32px 40px;
+    }
+
+    /* HEADER */
+    header { text-align: center; margin-bottom: 10px; }
+    header h1 { font-size: 26px; font-variant: small-caps; letter-spacing: 1px; }
+    .contact { margin-top: 4px; font-size: 12px; }
+    .contact a { color: #1a0dab; text-decoration: none; margin: 0 6px; }
+    .contact a:hover { text-decoration: underline; }
+
+    /* SECTION */
+    section { margin-top: 10px; }
+    section h2 {
+      font-size: 12.5px;
+      font-variant: small-caps;
+      font-weight: bold;
+      border-bottom: 1px solid #111;
+      padding-bottom: 1px;
+      margin-bottom: 6px;
+      letter-spacing: 0.5px;
+    }
+
+    /* SUBHEADING (jobs / education) */
+    .entry { margin-bottom: 5px; }
+    .entry-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+    }
+    .entry-header .title { font-weight: bold; font-size: 12.5px; }
+    .entry-header .date  { font-weight: bold; font-size: 12.5px; white-space: nowrap; }
+    .entry-sub { font-size: 12px; color: #333; margin-bottom: 3px; }
+
+    /* BULLET LISTS */
+    ul.bullets {
+      list-style: none;
+      padding-left: 14px;
+      margin-top: 2px;
+    }
+    ul.bullets li { position: relative; margin-bottom: 2px; line-height: 1.45; }
+    ul.bullets li::before {
+      content: "–";
+      position: absolute;
+      left: -12px;
+    }
+
+    /* PROJECTS */
+    .project-heading { font-weight: bold; font-size: 12.5px; }
+    .project-heading a { color: #1a0dab; text-decoration: none; }
+    .project-heading a:hover { text-decoration: underline; }
+    .project-heading .stack { font-weight: normal; color: #111; }
+
+    /* SKILLS / AWARDS / LANGUAGES */
+    .inline-row { margin-bottom: 3px; line-height: 1.5; }
+    .inline-row strong { font-weight: bold; }
+  </style>
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header>
+    <h1>Omar El Akrae</h1>
+    <div class="contact">
+      📞 +1 (514) 516-2557 &nbsp;|&nbsp;
+      <a href="mailto:omarsamy191@gmail.com">omarsamy191@gmail.com</a> |
+      <a href="https://www.linkedin.com/in/omar-el-akrae-533016335" target="_blank">LinkedIn</a> |
+      <a href="https://github.com/Omar01-E" target="_blank">GitHub</a> |
+      <a href="https://omar01-e.github.io/portfolio/portfolio.html" target="_blank">Portfolio</a>
+    </div>
+  </header>
+
+  <!-- EDUCATION -->
+  <section>
+    <h2>Education</h2>
+    <div class="entry">
+      <div class="entry-header">
+        <span class="title">Concordia University — Montreal, QC</span>
+        <span class="date">September 2023 – Present</span>
+      </div>
+      <div class="entry-sub">Bachelor of Engineering, Computer Engineering (Co-op)</div>
+    </div>
+  </section>
+
+  <!-- WORK EXPERIENCE -->
+  <section>
+    <h2>Work Experience</h2>
+
+    <div class="entry">
+      <div class="entry-header">
+        <span class="title">IT Security &amp; Systems Administrator — Groupe Robert</span>
+        <span class="date">May 2025 – Present</span>
+      </div>
+      <div class="entry-sub">Montreal, QC</div>
+      <ul class="bullets">
+        <li>Developed PowerShell and Python automation scripts to streamline user provisioning and endpoint configuration across 10+ facilities via Citrix and SCCM, reducing manual overhead by 30%.</li>
+        <li>Diagnosed and resolved system-level bugs and configuration issues across Windows/Linux environments; maintained database integrity and monitored infrastructure health using Genetec and SCCM.</li>
+        <li>Led software deployments, patch cycles, and infrastructure upgrades across enterprise systems; built alerting pipelines to detect and escalate anomalies before they impacted operations.</li>
+      </ul>
+    </div>
+
+    <div class="entry">
+      <div class="entry-header">
+        <span class="title">Platform &amp; Infrastructure Intern — Vidéotron</span>
+        <span class="date">Jan 2025 – May 2025</span>
+      </div>
+      <div class="entry-sub">Montreal, QC</div>
+      <ul class="bullets">
+        <li>Built PowerShell and Bash automation scripts for deployments, monitoring, and patch management, reducing manual intervention across enterprise systems.</li>
+        <li>Managed Active Directory and SCCM; led workstation imaging for Windows 11 migration and integrated alerting scripts that cut incident response time by 40%.</li>
+        <li>Supported Cisco network infrastructure and VLAN configuration across branch sites; documented changes to improve team onboarding and operational continuity.</li>
+      </ul>
+    </div>
+
+    <div class="entry">
+      <div class="entry-header">
+        <span class="title">Full-Stack Developer — Concordia Student Union</span>
+        <span class="date">Sep 2024 – Dec 2024</span>
+      </div>
+      <div class="entry-sub">Montreal, QC</div>
+      <ul class="bullets">
+        <li>Built a cross-platform event management system (React + React Native) for 200+ students with real-time Socket.io updates, Firebase back-end, and JWT-secured REST APIs.</li>
+        <li>Designed and implemented a responsive UI with Tailwind CSS; optimized Firebase queries reducing load times by 35%.</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section>
+    <h2>Projects</h2>
+
+    <div class="entry">
+      <div class="project-heading">
+        <a href="https://github.com/Omar01-E/Drive-with-Omar---Montreal-Traffic-AI-Agent.git" target="_blank">Drive with Omar — Montreal Traffic Intelligence Agent</a>
+        <span class="stack"> | JavaScript · Leaflet.js · HTML/CSS</span>
+      </div>
+      <ul class="bullets">
+        <li>Built a real-time AI traffic routing agent for Montreal comparing 3 routes via multi-factor scoring including traffic, signals, incidents, and rush-hour conditions with sub-100ms rescoring every 12 seconds.</li>
+        <li>Deployed 35+ geolocation-tagged incident markers using STM/MTQ road data, covering accidents, construction zones, and traffic signals for urban navigation research.</li>
+      </ul>
+    </div>
+
+    <div class="entry">
+      <div class="project-heading">
+        <a href="https://github.com/Omar01-E/vhdl-counters-registers-web-demo" target="_blank">VHDL Digital Logic Library</a>
+        <span class="stack"> | VHDL · Digital Logic · GHDL/ModelSim · Web Showcase</span>
+      </div>
+      <ul class="bullets">
+        <li>Designed BCD counter, LFSR, ring counter, up/down counter &amp; universal shift register (SISO/SIPO/PISO/PIPO) with testbenches and an interactive web-based waveform viewer.</li>
+        <li>Verified all modules with simulation-driven testbenches in GHDL; packaged waveform outputs into a static web showcase for portfolio demonstration.</li>
+      </ul>
+    </div>
+
+    <div class="entry">
+      <div class="project-heading">
+        <a href="https://github.com/Omar01-E/ecommerce-platform" target="_blank">ShopNova — Full-Stack E-Commerce Platform</a>
+        <span class="stack"> | React 18 · Node.js · Express · MongoDB · Stripe · JWT · Tailwind CSS</span>
+      </div>
+      <ul class="bullets">
+        <li>Production-ready store with product catalogue, cart, Stripe checkout, JWT auth &amp; order history; 15+ REST API endpoints, seeded MongoDB database, and fully responsive UI.</li>
+        <li>Implemented secure JWT authentication with protected routes and Stripe webhook handling for reliable order fulfillment and payment confirmation.</li>
+      </ul>
+    </div>
+
+    <div class="entry">
+      <div class="project-heading">
+        <a href="https://github.com/Omar01-E/sorting-visualizer" target="_blank">Sorting Algorithms Visualizer</a>
+        <span class="stack"> | Python · Pygame</span>
+      </div>
+      <ul class="bullets">
+        <li>Animates Bubble, Insertion, Selection, Merge &amp; Quick Sort with live comparison/swap counters, adjustable speed control, and color-coded bar states for educational use.</li>
+      </ul>
+    </div>
+
+    <div class="entry">
+      <div class="project-heading">
+        <a href="https://github.com/Omar01-E/LLM-Leaderboard" target="_blank">LLM Leaderboard Web Platform</a>
+        <span class="stack"> | React · Python/Flask · PostgreSQL · Docker · AWS · Supabase</span>
+      </div>
+      <ul class="bullets">
+        <li>Built a full-stack cybersecurity benchmark platform ranking LLMs across 4 forensics categories (Network, Digital Media, Malware Analysis, Memory Security) with difficulty-weighted scoring.</li>
+        <li>Implemented an Alert Triaging module evaluating models as security analysts; deployed via Docker Compose on AWS EC2 with GitHub Actions CI/CD and Supabase-managed PostgreSQL.</li>
+      </ul>
+    </div>
+
+    <div class="entry">
+      <div class="project-heading">
+        <a href="https://github.com/Omar01-E/bill-splitter" target="_blank">SplitEase — Bill Splitter</a>
+        <span class="stack"> | HTML · CSS · JavaScript</span>
+      </div>
+      <ul class="bullets">
+        <li>Zero-dependency web app for group bill splitting with per-person totals, tip percentage, and tax handling; deployed as a single-file app with no build step required.</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- TECHNICAL SKILLS -->
+  <section>
+    <h2>Technical Skills</h2>
+    <div class="inline-row"><strong>Languages:</strong> Java, Python, C/C++, Assembly, JavaScript, SQL, Bash, PowerShell</div>
+    <div class="inline-row"><strong>Web &amp; Back-End:</strong> React, React Native, Node.js, Express.js, MongoDB, Socket.io, Firebase, JWT, REST APIs, Tailwind CSS</div>
+    <div class="inline-row"><strong>IT &amp; Security:</strong> Genetec Security Center, Citrix, Active Directory, SCCM, Linux, Incident Response, Security Hardening</div>
+    <div class="inline-row"><strong>Hardware:</strong> VHDL, Digital Logic Design, Assembly, Circuit Simulation, Computer Architecture</div>
+  </section>
+
+  <!-- AWARDS & CERTIFICATIONS -->
+  <section>
+    <h2>Awards &amp; Certifications</h2>
+    <div class="inline-row">
+      UNDP Volunteer Certificate — United Nations &nbsp;·&nbsp;
+      AP Capstone Diploma — College Board &nbsp;·&nbsp;
+      Certificate of High Academic Excellence — IIS
+    </div>
+  </section>
+
+  <!-- LANGUAGES -->
+  <section>
+    <h2>Languages</h2>
+    <div class="inline-row">
+      French (Native) &nbsp;·&nbsp; English (Fluent) &nbsp;·&nbsp; Arabic (Fluent) &nbsp;·&nbsp; Turkish (Conversational)
+    </div>
+  </section>
+
+</body>
+</html>
